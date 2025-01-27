@@ -4,10 +4,10 @@ packaging_format = 2
 
 id = "ifconfig-io"
 name = "ifconfig-io"
-description.en = "IP API service to get their public IP address"
-description.fr = "Service API IP pour obtenir leur adresse IP publique"
+description.en = "Tool to find your own IP address"
+description.fr = "Outil pour trouver votre propre adresse IP"
 
-version = "2024.07.02~ynh1"
+version = "2024.12.29~ynh1"
 
 maintainers = ["Fabian Wilkens"]
 
@@ -20,12 +20,12 @@ userdoc = "https://github.com/georgyo/ifconfig.io/"
 code = "https://github.com/georgyo/ifconfig.io/"
 
 [integration]
-yunohost = ">= 11.2.12"
+yunohost = ">= 12.0.9"
+helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
 
 ldap = false
-
 sso = false
 
 disk = "50M"
@@ -46,8 +46,8 @@ ram.runtime = "50M"
 
 [resources]
     [resources.sources.main]
-    url = "https://github.com/georgyo/ifconfig.io/archive/57dcaffc5c74ae40ca3143ceeb0af64bf436ee63.tar.gz"
-    sha256 = "c3d7cfe762f7525e07524219a708ccdf2c4c57d4a6cea6eedcbababdd1069780"
+    url = "https://github.com/georgyo/ifconfig.io/archive/19d870ce4ad8f14458133fe5a30f862dbac50dce.tar.gz"
+    sha256 = "56949a0f6f21ed615c548f60d80d25f0cc7004f19f2317755d2f2fc54563b9a1"
     autoupdate.strategy = "latest_github_commit"
 
     [resources.system_user]
